@@ -1,0 +1,568 @@
+/* Feel free to use @import. r.js will merge them, when building */
+@import "../vendor/bootstrap/build/css/bootstrap.min.css";
+@import "normalize.css";
+
+::-webkit-input-placeholder {
+   color: #DA9E35;
+   font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #DA9E35; 
+   font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #DA9E35;  
+   font-style: italic;
+}
+
+:-ms-input-placeholder {  
+   color: #DA9E35;
+   font-style: italic;
+}
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+a { cursor: pointer; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+    font-family: 'LithosPro850';
+    src: url('lithospro-black.eot');
+    src: url('lithospro-black.eot') format('embedded-opentype'),
+         url('lithospro-black.woff') format('woff'),
+         url('lithospro-black.ttf') format('truetype'),
+         url('lithospro-black.svg#LithosPro850') format('svg');
+}
+
+.itemsummary {
+	height: 100%;
+	position: absolute;
+	z-index: 100;
+	background: rgba(0,0,0,.7);
+	width: 100%;
+}
+
+.itemsummary-inner {
+	position: absolute;
+	width: 30em;
+	height: 20em;
+	top: 50%;
+	margin-top: -15em;
+	left: 50%;
+	margin-left: -15em;
+	background: #fff;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+}
+.itemsummary-inner .item-name  {
+	padding: 1em;
+	background: #CD484B;
+	text-align: left;
+	font-family: 'LithosPro850', sans-serif; font-size: 1em; color: #fff;
+}
+.itemsummary-inner img {
+	width: 14em;
+	float: left;
+	padding: 1em;
+}
+.item-desc {
+	width:12em;
+	padding: 1em;
+	float: left;
+}
+.itemsummary-inner .item-price {
+	font-weight: bold;
+	font-size: 2.5em;
+	color: #CC474B;
+}
+.itemsummary-inner .item-price span {
+	font-size: .5em;
+}
+.itemsummary-inner .close {
+	margin: 1em;
+}
+   
+#main {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #CD484B;
+	padding: 20px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+#main-inner {
+	position: relative;
+	background: url(../img/container-inner_bg.png);
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+}
+
+.logo {
+	background: url(../img/logo.png) no-repeat center center;
+	background-size: 125px 170px;
+	height: 200px;
+	margin-bottom: 2em;
+}
+
+#categoriesview{}
+#categoriesview ul { list-style: none; margin: 0; padding: 0; }
+#categoriesview ul li { background: rgba(205,72,75,.1); margin-bottom: .5em; }
+#categoriesview ul li.active, #categoriesview ul li:hover, #categoriesview ul li:active { background: #CD484B; }
+#categoriesview ul li a { display: block; width: 100%; height: 4em; line-height: 4em; text-indent: 1em; font-size: 1em; font-weight: bold; color: #fff; font-family: 'LithosPro850', sans-serif; }
+#categoriesview ul li.active a {  }
+
+#orderssummaryview {
+	margin-bottom: 1em;
+	padding: 1em;
+	text-align: right;
+	float: right;
+}
+.orderssummary {
+	background: #CD484B;
+	width: 20em;
+	padding: .5em;
+	position: relative;
+}
+.orderssummary-description {
+	font-family: 'LithosPro850', sans-serif; color: #fff; font-size: .8em; line-height:3em; text-indent: 1em;
+}
+.orderssummary-total {
+	font-weight: bold; color: #fff; font-size: 1em; line-height: 2.5em; text-indent: 1em; margin-right: .5em;
+}
+.orderssummary-more {
+	padding: .5em .6em;
+	line-height: 1em;
+	background: #9D5D3F;
+	display: block;
+	margin-top: .2em;
+}
+.orderssummary-list {
+	position: absolute;
+	top: 47px;
+	right: 0;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+	background: #fff;
+}
+
+.ordersummary-list-item {
+	width: 35em;
+}
+.ordersummary-list-item.even {
+	background: #ddd;
+}
+
+.ordersummary-list-item .addone, .ordersummary-list-item .minusone {
+	float: left;
+	width: 2em;
+	line-height: 1.8em;
+	padding: .5em;
+	font-weight: bold;
+	text-align: center;
+	border-right: 2px solid #fff;
+}
+.ordersummary-list-item.even .addone, .ordersummary-list-item.even .minusone {
+	border-right: 2px solid #ddd;
+	background: #9D5D3F;
+}
+
+.ordersummary-list-item .item-quantity {
+	float: left;
+	width: 2em;
+	line-height: 1.8em;
+	padding: .5em;
+	font-weight: bold;
+	text-align: center;
+}
+.ordersummary-list-item .item-name {
+	padding: 1em;
+	background: #CD484B;
+	float: left;
+	text-align: left;
+	font-family: 'LithosPro850', sans-serif; font-size: .8em; color: #fff;
+	width: 20em;
+}
+.ordersummary-list-item.even .item-name {
+	background: #9D5D3F;
+}
+.ordersummary-list-item .item-total {
+	float: right;
+	width: 5em;
+	line-height: 1.8em;
+	padding: .5em;
+	font-weight: bold;
+	text-align: right;
+}
+
+#menuview {
+	margin: 1em;
+	padding: 1em;
+	height: 550px;
+	overflow: auto;
+	
+	background : linear-gradient(rgb(242,200,61) 30%, rgba(242,200,61,0)), linear-gradient(rgba(242,200,61,0), rgb(242,200,61) 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+	background-repeat : no-repeat;
+	background-size : 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+	background-attachment : local, local, scroll, scroll;
+}
+.menu {
+	padding: 5px;
+	column-count: 2;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 1px;
+}
+.menu-item {
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+	display: inline-block;
+	margin: 1em .5em;
+}
+.menu-item.hide {
+	display: none;
+}
+.menu-item h5 {
+	font-family: 'LithosPro850', sans-serif;
+	background: #CD484B;
+	padding: .5em;
+	color: #fff;
+	margin: 0;
+}
+.menu-item-meta {
+	background: #fff;
+	padding: .5em;
+}
+.menu-item-meta img {
+	width: 7em;
+}
+.menu-item-meta img:hover, .menu-item-meta img:active {
+	background: url(../img/itemhoveractive.png) no-repeat center center;
+	background-size: contain;
+}
+.menu-item-description {
+	margin: 0 1em;
+	width: 8em;
+}
+.menu-item-description h3 {
+	margin: .3em 0;
+	color: #CC474B;
+}
+.menu-item-description p {
+	color: #999;
+	font-style: italic;
+	font-size: .8em;
+}
+.menu-item-meta table {
+	border-spacing: 0;
+}
+.menu-item-meta table td {
+	padding: .3em;
+}
+.setquantity {
+	width: 1.3em;
+	margin-bottom: 0 !important;
+	display: block;
+}
+.addone {
+	padding: .5em .5em;
+	line-height: .7em;
+	background: #CD484B;
+	display: block;
+}
+.minusone {
+	padding: .5em .5em;
+	line-height: .7em;
+	background: #CD484B;
+	display: block;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

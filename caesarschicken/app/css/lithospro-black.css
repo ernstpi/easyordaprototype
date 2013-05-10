@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'LithosPro850';
+    src: url('lithospro-black.eot');
+    src: url('lithospro-black.eot') format('embedded-opentype'),
+         url('lithospro-black.woff') format('woff'),
+         url('lithospro-black.ttf') format('truetype'),
+         url('lithospro-black.svg#LithosPro850') format('svg');
+}
