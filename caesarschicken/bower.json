@@ -1,0 +1,15 @@
+{
+  "name": "RequireJS Starter",
+  "version": "1.0.0",
+  "dependencies": {
+    "requirejs": "latest",
+	"text": "latest",
+    "jquery": "latest",
+    "backbone-amd": "latest",
+	"backbone.localStorage": "latest",
+    "underscore-amd": "latest",
+	"hbs": "latest",
+	"bootstrap": "bootstrap",
+	"jquery-nicescroll": "jquery-nicescroll"
+  }
+}
