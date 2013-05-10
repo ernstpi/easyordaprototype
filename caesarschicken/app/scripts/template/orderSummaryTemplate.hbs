@@ -1,0 +1,20 @@
+<div class="orderssummary">
+	<div class="orderssummary-inner">
+		<div class="orderssummary-description pull-left">Your Order</div>
+		<a class="orderssummary-more pull-right"><i class="icon-chevron-down icon-white"></i></a>
+		<div class="orderssummary-total pull-right">${{total}}</div>
+		<div class="clearfix"></div>
+		<div class="orderssummary-list {{showHide}}" >
+			{{#oddevenhelper orderssummary "even" "odd" }}
+				<div class="ordersummary-list-item {{stripeClass}}" data-menu-item-id="{{id}}">
+					<a class="addone"><i class="icon-chevron-up icon-white"></i></a>
+					<a class="minusone"><i class="icon-chevron-down icon-white"></i></a>
+					<div class="item-quantity">{{quantity}}x</div>
+					<div class="item-name">{{item_name}}</div>
+					<div class="item-total">$ {{total}}</div>
+					<div class="clearfix"></div>
+				</div>
+			{{/oddevenhelper}}
+		</div>
+	</div>
+</div>

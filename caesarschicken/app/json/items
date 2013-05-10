@@ -1,0 +1,158 @@
+{
+	"items":
+	[
+        {
+			"id": "1",
+            "item_name": "Country Fried Chicken - 10 Piece",
+			"item_category": "Chickens",
+            "item_price": "22.00",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+            "item_image": "img/item2.png"
+        },
+		{
+			"id": "2",
+            "item_name": "Grilled Chicken Fillet Burger",
+			"item_category": "Burgers",
+            "item_price": "7.50",
+            "item_calorie": "1850",
+            "item_description": "Yummy",
+			"item_image": "img/item.png"
+        },
+        {
+			"id": "3",
+            "item_name": "Chicken Schnitzel Burger",
+			"item_category": "Burgers",
+            "item_price": "7.50",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item.png"
+        },
+        {
+			"id": "4",
+            "item_name": "Caesars BLT Chicken Burger",
+			"item_category": "Burgers",
+            "item_price": "8.50",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item.png"
+        },
+        {
+			"id": "5",
+            "item_name": "Jumbo Egg & Bacon Burger",
+			"item_category": "Burgers",
+            "item_price": "7.50",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item.png"
+        },
+        {
+			"id": "6",
+            "item_name": "Southern Style Chicken Burger",
+			"item_category": "Burgers",
+            "item_price": "8.00",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item.png"
+        },
+        {
+			"id": "7",
+            "item_name": "Caesars Per-Peri Burger",
+			"item_category": "Burgers",
+            "item_price": "8.00",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item.png"
+        },
+        {
+			"id": "8",
+            "item_name": "Portugese Burger",
+			"item_category": "Burgers",
+            "item_price": "8.00",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item.png"
+        },
+        {
+			"id": "9",
+            "item_name": "100% Beef Burger",
+			"item_category": "Burgers",
+            "item_price": "8.50",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item.png"
+        },
+        {
+			"id": "10",
+            "item_name": "Gourmet Burger",
+			"item_category": "Burgers",
+            "item_price": "9.00",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item.png"
+        },
+        {
+			"id": "11",
+            "item_name": "Flamed Grilled Chicken - Whole",
+			"item_category": "Chickens",
+            "item_price": "16.00",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item2.png"
+        },
+        {
+			"id": "12",
+            "item_name": "Flamed Grilled Chicken - 1/2",
+			"item_category": "Chickens",
+            "item_price": "8.50",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item2.png"
+        },
+        {
+			"id": "13",
+            "item_name": "Flamed Grilled Chicken - 1/4",
+			"item_category": "Chickens",
+            "item_price": "5.00",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item2.png"
+        },
+        {
+			"id": "14",
+            "item_name": "Country Fried Chicken - 1 Piece",
+			"item_category": "Chickens",
+            "item_price": "8.00",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item2.png"
+        },
+        {
+			"id": "15",
+            "item_name": "Country Fried Chicken - 5 Piece",
+			"item_category": "Chickens",
+            "item_price": "11.00",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item2.png"
+        },
+        {
+			"id": "16",
+            "item_name": "Iced Milk",
+			"item_category": "Drinks",
+            "item_price": "2.80",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item3.png"
+        },
+        {
+			"id": "17",
+            "item_name": "Iced Coffee",
+			"item_category": "Drinks",
+            "item_price": "1.00",
+            "item_calorie": "1860",
+            "item_description": "Yummier",
+			"item_image": "img/item3.png"
+        }
+	]
+}

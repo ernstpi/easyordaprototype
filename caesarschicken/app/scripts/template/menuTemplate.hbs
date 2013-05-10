@@ -1,0 +1,18 @@
+{{#items}}
+<div class="menu-item" data-menu-item-id="{{id}}" data-menu-category="{{item_category}}">
+	<h5>{{item_name}}</h5>
+	<div class="menu-item-meta">
+		<img src="{{item_image}}" class="pull-left">
+		<div class="menu-item-description pull-left">
+			<h3>${{item_price}}</h3>
+			<p>{{item_description}}</p>
+		</div>
+		<table class="pull-right">
+			<tr><td><a class="addone"><i class="icon-chevron-up icon-white"></i></a></td></tr>
+			<tr><td><input class="setquantity" type="text" value="{{#if quantity}}{{quantity}}{{else}}0{{/if}}"></td></tr>
+			<tr><td><a class="minusone"><i class="icon-chevron-down icon-white"></i></a></td></tr>
+		</table>
+		<div class="clearfix"></div>
+	</div>
+</div>
+{{/items}}

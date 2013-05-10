@@ -1,0 +1,17 @@
+{
+	"categories":
+	[
+        {
+			"id": "1",
+            "category_name": "Chickens"
+        },
+		{
+			"id": "2",
+            "category_name": "Burgers"
+        },
+		{
+			"id": "3",
+            "category_name": "Drinks"
+        }
+	]
+}
